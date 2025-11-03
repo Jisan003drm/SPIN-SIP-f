@@ -43,7 +43,42 @@ body.dark .booking-form{background:rgba(255,255,255,0.03)}
 .cta{background:#004080; color:white; padding:8px 12px; border-radius:6px; text-decoration:none}
 .hamburger{display:none; background:none; border:none; font-size:20px}
 
+/* Mobile adjustments */
+@media (max-width: 720px) {
+	.header-inner{flex-wrap:wrap; padding:10px}
+	.brand{flex:1 1 100%; align-items:center}
+	.header-utilities{flex:1 1 auto; gap:6px; margin-left:0; justify-content:flex-end}
+	.lang-select{min-width:88px; padding:6px 8px; font-size:0.95rem}
+	.mode-toggle{padding:6px}
+	.cta{padding:8px 10px; font-size:0.95rem}
+	.hamburger{display:inline-block}
+	.main-nav{display:none}
+}
+
+@media (max-width: 480px) {
+	.header-inner{align-items:center; gap:8px}
+	.brand{flex:0 0 auto}
+	.brand-text h1{font-size:1rem}
+	.tagline{display:none}
+	.header-utilities{width:100%; order:3; justify-content:space-between; padding-top:8px}
+	.lang-select{min-width:72px}
+	.cta{display:inline-block; padding:8px 10px}
+	.hero-inner{flex-direction:column; gap:12px}
+	.hero-image img{width:100%; max-width:260px}
+	.hero-copy h2{font-size:1.25rem}
+	.lead{font-size:0.95rem}
+}
+
 .header-sub{max-width:1100px; margin:0 auto; padding:6px 14px 12px 14px; color:#444}
+
+/* Ensure header-sub doesn't cause horizontal overflow on small screens */
+@media (max-width:720px) {
+	.header-sub{max-width:100%; padding:6px 10px}
+}
+
+@media (max-width:420px) {
+	.header-sub{display:block; padding:6px 8px; font-size:0.95rem}
+}
 
 /* Hero */
 .hero{padding:28px 14px}
@@ -208,7 +243,7 @@ body.dark .login-form input{background:#071a2a; border:1px solid rgba(255,255,25
 
 /* Small screens */
 @media (max-width:900px){
-	.main-nav{display:none}
+	.header-inner{align-items:center; gap:8px}
 	.hamburger{display:inline-block}
 	.header-inner{padding:12px}
 	.hero-inner{flex-direction:column}
@@ -216,16 +251,19 @@ body.dark .login-form input{background:#071a2a; border:1px solid rgba(255,255,25
 	.brand-text h1{font-size:1rem}
 	.map-iframe{height:260px}
 }
-
-/* Mobile nav panel (hidden by default; toggled with JS) */
+.hero-image img{width:100%; max-width:260px}
+.hero-copy h2{font-size:1.25rem}
+.lead{font-size:0.95rem}
+.hero{margin:10px 8px; border-radius:6px}
+}
 .mobile-nav-panel{
 	display:none;
 	position:fixed;
 	top:0; left:0; right:0;
-	background:rgba(255,255,255,0.98);
-	box-shadow:0 6px 20px rgba(0,0,0,0.15);
-	padding:14px;
-	z-index:9999;
+ 	background:rgba(255,255,255,0.98);
+ 	box-shadow:0 6px 20px rgba(0,0,0,0.15);
+ 	padding:14px;
+ 	z-index:9999;
 }
 .mobile-nav-panel.open{display:block}
 .mobile-nav-panel ul{list-style:none; display:flex; flex-direction:column; gap:8px}
@@ -379,6 +417,10 @@ body.dark .menu-item, body.dark .services-grid .card{background:#071428}
 	.brand-text h1{font-size:0.95rem}
 	.logo{width:44px; height:44px}
 	.map-iframe{height:200px}
+
+	/* Ensure upload controls wrap and progress fits on very small screens */
+	.upload-controls{flex-wrap:wrap; gap:8px}
+	.upload-controls progress{width:100%}
 }
 
 
