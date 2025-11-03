@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png">
+  <meta name="description" content="Transparent prices for laundry and cafe items at Spin & Sip. View common services and rates.">
+  <meta property="og:title" content="Spin & Sip - Prices">
+  <meta property="og:description" content="See our common service prices for wash & fold, express, dry cleaning and cafe items.">
+  <title>Prices  Spin & Sip</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#004080">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="logo.png" alt="Spin & Sip logo" class="logo" />
+        <div class="brand-text">
+          <h1>Spin &amp; Sip</h1>
+          <p class="tagline">Cafe + Laundry — coffee while you wait</p>
+        </div>
+      </div>
+
+  <nav class="main-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="prices.html">Prices</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-utilities">
+        <select id="lang-select" class="lang-select">
+          <option value="en">EN</option>
+          <option value="ms">MS (Bahasa Melayu)</option>
+          <option value="bn">BN (বাংলা)</option>
+          <option value="ta">TA (தமிழ்)</option>
+          <option value="zh">ZH (中文)</option>
+        </select>
+        <button id="mode-toggle" class="mode-toggle" title="Toggle theme">🌙</button>
+        <a href="index.html#book" class="cta">Order / Book</a>
+        <a href="login.html" class="utility-link">Login</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="header-sub"><p>We wash, dry and serve great coffee — fast, friendly, local.</p></div>
+  </header>
+  <main>
+    <section id="prices" class="prices">
+      <div class="section-inner">
+        <h3 data-i18n="prices.title">Prices</h3>
+        <p>Transparent pricing with no hidden fees — see our most common services below.</p>
+        <div class="prices-table">
+          <div class="price-row"><strong data-i18n="prices.wash">Wash & Fold</strong><span>RM8 / kg</span></div>
+          <div class="price-row"><strong data-i18n="prices.express">Express Service</strong><span>RM12 / kg (same-day)</span></div>
+          <div class="price-row"><strong data-i18n="prices.dry">Dry Cleaning</strong><span>from RM10 / item</span></div>
+          <div class="price-row"><strong data-i18n="prices.shirt">Shirt Press</strong><span>RM5 / item</span></div>
+          <div class="price-row"><strong data-i18n="prices.blanket">Blanket / Comforter</strong><span>from RM25</span></div>
+          <div class="price-row"><strong data-i18n="prices.coffee">Signature Latte</strong><span>RM8</span></div>
+        </div>
+  <div class="price-notes spaced-top muted-note">
+          <p><strong>Notes:</strong> Express service availability depends on capacity. Prices may vary for heavily soiled items or special fabrics. Ask at counter for bulk discounts.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>

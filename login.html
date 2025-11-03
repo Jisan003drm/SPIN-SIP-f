@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png">
+  <meta name="description" content="Login to Spin & Sip to view orders, manage bookings and preferences.">
+  <meta property="og:title" content="Spin & Sip - Login">
+  <meta property="og:description" content="Sign in to manage your bookings and orders at Spin & Sip.">
+  <title>Login  Spin & Sip</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#004080">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="logo.png" alt="Spin & Sip logo" class="logo" />
+        <div class="brand-text">
+          <h1>Spin &amp; Sip</h1>
+          <p class="tagline">Cafe + Laundry — coffee while you wait</p>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="prices.html">Prices</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-utilities">
+        <select id="lang-select" class="lang-select">
+          <option value="en">EN</option>
+          <option value="ms">MS (Bahasa Melayu)</option>
+          <option value="bn">BN (বাংলা)</option>
+          <option value="ta">TA (தமிழ்)</option>
+          <option value="zh">ZH (中文)</option>
+        </select>
+        <button id="mode-toggle" class="mode-toggle" title="Toggle theme">🌙</button>
+        <a href="index.html#book" class="cta">Order / Book</a>
+        <a href="login.html" class="utility-link">Login</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="header-sub"><p>We wash, dry and serve great coffee — fast, friendly, local.</p></div>
+  </header>
+  <main>
+    <section id="login" class="login">
+      <div class="section-inner">
+        <h3 data-i18n="login.title">Login</h3>
+        <form id="login-form" class="login-form" aria-label="Login form">
+          <div class="row"><label for="lg-email">Email</label><input id="lg-email" type="email" name="email" required></div>
+          <div class="row">
+            <label for="lg-pass">Password</label>
+            <div class="password-row">
+              <input id="lg-pass" type="password" name="password" required>
+              <button type="button" id="toggle-pass" aria-label="Show password" class="mode-toggle">👁️</button>
+            </div>
+          </div>
+          <div class="row remember-row"><label><input id="remember-me" type="checkbox"> <span data-i18n="login.remember">Remember me</span></label></div>
+          <div class="row"><button class="btn btn-primary" type="submit" data-i18n="login.submit">Sign in</button></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>

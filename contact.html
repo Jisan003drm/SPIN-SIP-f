@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png">
+  <meta name="description" content="Contact Spin & Sip — call, email or send a message with optional photo attachments for issues or feedback.">
+  <meta property="og:title" content="Spin & Sip - Contact">
+  <meta property="og:description" content="Get in touch with Spin & Sip for bookings, feedback or questions.">
+  <title>Contact  Spin & Sip</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#004080">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <img src="logo.png" alt="Spin & Sip logo" class="logo" />
+        <div class="brand-text">
+          <h1>Spin &amp; Sip</h1>
+          <p class="tagline">Cafe + Laundry — coffee while you wait</p>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="prices.html">Prices</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-utilities">
+        <select id="lang-select" class="lang-select">
+          <option value="en">EN</option>
+          <option value="ms">MS (Bahasa Melayu)</option>
+          <option value="bn">BN (বাংলা)</option>
+          <option value="ta">TA (தமிழ்)</option>
+          <option value="zh">ZH (中文)</option>
+        </select>
+        <button id="mode-toggle" class="mode-toggle" title="Toggle theme">🌙</button>
+        <a href="index.html#book" class="cta">Order / Book</a>
+        <a href="login.html" class="utility-link">Login</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="header-sub"><p>We wash, dry and serve great coffee — fast, friendly, local.</p></div>
+  </header>
+  <main>
+    <section id="contact" class="contact">
+      <div class="section-inner">
+        <h3 data-i18n="contact.title">Contact</h3>
+        <p data-i18n="contact.info">Call us at <strong>+60 12-345 6789</strong> or drop by the cafe during opening hours.</p>
+  <div class="contact-grid">
+          <div>
+            <h4>Address</h4>
+            <p>Spin & Sip — Jalan Reko, 43000 Bangi, Selangor, Malaysia</p>
+            <h4>Opening hours</h4>
+            <p>Mon–Sat: 8:00 — 20:00<br>Sun: 9:00 — 18:00</p>
+            <h4>Email</h4>
+            <p><a href="mailto:hello@spinandsip.my">hello@spinandsip.my</a></p>
+            <h4>Follow us</h4>
+            <p>
+              <a href="#" aria-label="Instagram">Instagram</a> • <a href="#" aria-label="Facebook">Facebook</a>
+            </p>
+            <h4>Send us a message</h4>
+      <!-- To enable server uploads, set data-endpoint to your upload handler (e.g. Formspree or your API):
+        <form id="contact-form" data-endpoint="https://formspree.io/f/your-id" ...>
+      -->
+      <!-- By default this demo uses the example server at /upload. Change data-endpoint to your provider (Formspree, Netlify, or your API).
+        For local testing with the included example server, run server/npm and set data-endpoint="/upload" -->
+      <form id="contact-form" class="contact-form" aria-label="Contact form" novalidate data-endpoint="/upload">
+              <div class="row"><label for="ct-name">Name</label><input id="ct-name" name="name" required></div>
+              <div class="row"><label for="ct-email">Email</label><input id="ct-email" name="email" type="email"></div>
+              <div class="row"><label for="ct-msg">Message</label><textarea id="ct-msg" name="message" rows="4"></textarea></div>
+              <div class="row"><label for="ct-file">Attach a photo (optional)</label><input id="ct-file" name="file" type="file" accept="image/*"></div>
+              <div class="row"><div class="file-preview" aria-hidden="true"><img id="ct-file-preview" alt=""/></div></div>
+              <div class="row">
+                <button class="btn btn-primary" type="submit" data-i18n="contact.submit">Send message</button>
+                <div class="upload-controls">
+                  <progress id="ct-progress" value="0" max="100"></progress>
+                  <button type="button" id="ct-cancel" class="btn">Cancel</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div>
+            <div class="map-wrapper">
+              <iframe class="map-iframe" title="Map: Bangi location" src="https://www.openstreetmap.org/export/embed.html?bbox=101.790%2C2.893%2C101.820%2C2.913&amp;layer=mapnik&amp;marker=2.903%2C101.805" allowfullscreen="" loading="lazy"></iframe>
+              <p class="map-attrib">Map: <a href="https://www.openstreetmap.org/?mlat=2.903&amp;mlon=101.805#map=15/2.903/101.805" target="_blank" rel="noopener">Bangi, Malaysia — OpenStreetMap</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>

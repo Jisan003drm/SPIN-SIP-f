@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <meta name="description" content="Spin & Sip — Cafe + Laundry. Get laundry done while you enjoy coffee. Fast service in Bangi.">
+    <meta property="og:title" content="Spin & Sip">
+    <meta property="og:description" content="Cafe + Laundry — coffee while you wait. Drop off laundry and relax with a great cup.">
+    <meta property="og:image" content="logo.png">
+    <meta name="twitter:card" content="summary">
+    <title>Spin & Sip</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#004080">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+   <header class="site-header">
+       <div class="header-inner">
+           <div class="brand">
+               <img src="logo.png" alt="Spin & Sip logo" class="logo" />
+               <div class="brand-text">
+                   <h1>Spin &amp; Sip</h1>
+                   <p class="tagline">Cafe + Laundry — coffee while you wait</p>
+               </div>
+           </div>
+
+        <nav class="main-nav" role="navigation" aria-label="Primary">
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="services.html">Services</a></li>
+                   <li><a href="menu.html">Menu</a></li>
+                   <li><a href="prices.html">Prices</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+               </ul>
+           </nav>
+
+           <div class="header-utilities">
+                            <select id="lang-select" class="lang-select">
+                                <option value="en">EN</option>
+                                <option value="ms">MS (Bahasa Melayu)</option>
+                                <option value="bn">BN (বাংলা)</option>
+                                <option value="ta">TA (தமிழ்)</option>
+                                <option value="zh">ZH (中文)</option>
+                            </select>
+               <button id="mode-toggle" class="mode-toggle" title="Toggle theme">🌙</button>
+               <a href="index.html#book" class="cta">Order / Book</a>
+               <a href="login.html" class="utility-link">Login</a>
+               <button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
+           </div>
+       </div>
+       <div class="header-sub">
+           <p>We wash, dry and serve great coffee — fast, friendly, local.</p>
+       </div>
+   </header>
+
+   <main>
+       <!-- HERO -->
+       <section id="hero" class="hero">
+           <div class="section-inner hero-inner">
+               <div class="hero-copy">
+                   <h2 data-i18n="hero.title">Clean clothes. Great coffee. No waiting.</h2>
+                   <p class="lead" data-i18n="hero.lead">Drop off your laundry, grab a seat, and enjoy our signature coffee while we take care of the rest. Fast service, honest prices.</p>
+                   <div class="hero-ctas">
+                       <a href="#book" class="btn btn-primary">Order / Book</a>
+                       <a href="#menu" class="btn btn-outline">View Menu</a>
+                   </div>
+               </div>
+               <div class="hero-image" aria-hidden="true">
+                   <img src="logo.png" alt="Coffee and laundry" />
+               </div>
+           </div>
+    </section>
+
+       <!-- HOW IT WORKS -->
+       <section id="how" class="how-it-works">
+           <div class="section-inner">
+               <h3 data-i18n="how.title">How it works</h3>
+               <div class="steps">
+               <div class="step">
+                   <div class="icon">1</div>
+                   <h4 data-i18n="how.step1.title">Drop clothes</h4>
+                   <p data-i18n="how.step1.text">Bring your laundry to the counter or request pickup.</p>
+               </div>
+               <div class="step">
+                   <div class="icon">2</div>
+                   <h4 data-i18n="how.step2.title">Relax &amp; sip</h4>
+                   <p data-i18n="how.step2.text">Enjoy coffee or snacks in our cozy cafe while we work.</p>
+               </div>
+               <div class="step">
+                   <div class="icon">3</div>
+                   <h4 data-i18n="how.step3.title">Collect or deliver</h4>
+                   <p data-i18n="how.step3.text">Pick up in-store or get your clothes delivered fresh and folded.</p>
+               </div>
+               </div>
+           </div>
+       </section>
+
+    <!-- Services/Prices moved to separate pages -->
+
+       <!-- QUICK BOOKING -->
+       <section id="book" class="booking">
+           <div class="section-inner">
+               <h3 data-i18n="booking.title">Quick Booking</h3>
+               <form id="booking-form" class="booking-form" aria-label="Quick booking">
+               <div class="row">
+                   <label for="bk-name" data-i18n="booking.name">Name</label>
+                   <input id="bk-name" name="name" required />
+               </div>
+               <div class="row">
+                   <label for="bk-phone" data-i18n="booking.phone">Phone</label>
+                   <input id="bk-phone" name="phone" required />
+               </div>
+               <div class="row">
+                   <label for="bk-service" data-i18n="booking.service">Service</label>
+                   <select id="bk-service" name="service">
+                       <option data-i18n="booking.opt.wash">Wash &amp; Fold</option>
+                       <option data-i18n="booking.opt.express">Express</option>
+                       <option data-i18n="booking.opt.dry">Dry Clean</option>
+                   </select>
+               </div>
+               <div class="row">
+                   <label for="bk-time" data-i18n="booking.time">Preferred time</label>
+                   <input id="bk-time" type="time" name="time" />
+               </div>
+               <div class="row">
+                   <button class="btn btn-primary" type="submit" data-i18n="booking.submit">Request Pickup</button>
+               </div>
+               </form>
+           </div>
+       </section>
+
+    <!-- Menu moved to separate page -->
+
+       <!-- TESTIMONIALS -->
+       <section id="testimonials" class="testimonials">
+           <div class="section-inner">
+               <h3 data-i18n="testimonials.title">What customers say</h3>
+               <blockquote data-i18n="testimonials.quote">"Fast, friendly and the coffee is amazing — highly recommend!" — A. Tan</blockquote>
+           </div>
+       </section>
+
+    <!-- Login moved to separate page -->
+
+    <!-- Contact moved to separate page -->
+
+       <!-- FAQ -->
+       <section id="faq" class="faq">
+           <div class="faq-inner">
+               <h3>FAQ</h3>
+               <details>
+                   <summary>How long does washing take?</summary>
+                   <p>Standard service usually completes within 24–48 hours; express options are same-day.</p>
+               </details>
+               <details>
+                   <summary>Do you use eco-friendly detergent?</summary>
+                   <p>Yes — we offer eco options and gentle detergents for sensitive skin.</p>
+               </details>
+           </div>
+       </section>
+
+       <!-- BRANCH LOCATOR -->
+       <section id="locations" class="locations">
+           <div class="section-inner">
+               <h3 data-i18n="locations.title">Find us</h3>
+               <p data-i18n="locations.address">Bangi outlet — Jalan Reko — Open 8am–8pm</p>
+               <div class="map-wrapper">
+                   <iframe class="map-iframe" title="Map: Bangi location" src="https://www.openstreetmap.org/export/embed.html?bbox=101.790%2C2.893%2C101.820%2C2.913&amp;layer=mapnik&amp;marker=2.903%2C101.805" allowfullscreen="" loading="lazy"></iframe>
+                   <p class="map-attrib">Map: <a href="https://www.openstreetmap.org/?mlat=2.903&amp;mlon=101.805#map=15/2.903/101.805" target="_blank" rel="noopener">Bangi, Malaysia — OpenStreetMap</a></p>
+               </div>
+           </div>
+       </section>
+   </main>
+
+    <script src="script.js" defer></script>
+    </body>
+    </html>
